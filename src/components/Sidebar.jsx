@@ -1,8 +1,7 @@
 import React, {useState} from "react";
 import {NavLink} from 'react-router-dom'
-import Home from "./user-interfaces/Home.jsx";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCheckCircle} from "@fortawesome/free-solid-svg-icons";
+import {faCheckCircle, faHome, faVideoCamera, faTv, faCalendar} from "@fortawesome/free-solid-svg-icons";
 
 const SideBar = () => {
     const [open, setOpen] = useState(true);
@@ -26,7 +25,7 @@ const SideBar = () => {
                             index === 0 && "bg-bghover w-52 rounded-1xl "
                         } `}
                     >
-                        <img alt='' className='w-8 h-8 stroke-gray-100' src={`./src/assets/home.png`}/>
+                        <FontAwesomeIcon icon={faHome} className='text-lg text-gray-400' />
                         <NavLink to='/'>
                                <span className={`${!open && "hidden"} origin-left text-light-white font-semibold text-2xl duration-200`}>
                                    Home
@@ -41,7 +40,7 @@ const SideBar = () => {
                             index === 1 && "bg-bghover w-52 "
                         } `}
                     >
-                        <img alt='' className='w-8 h-8 stroke-gray-100' src={`./src/assets/camera.png`}/>
+                        <FontAwesomeIcon icon={faVideoCamera} className='text-lg text-gray-400' />
                         <NavLink to='/movies'>
                                <span className={`${!open && "hidden"} origin-left text-light-white font-semibold text-2xl duration-200`}>
                                    Movies
@@ -56,7 +55,7 @@ const SideBar = () => {
                             index === 2 && "bg-bghover w-52"
                         } `}
                     >
-                        <img alt='' className='w-8 h-8 stroke-gray-100' src={`./src/assets/series.png`}/>
+                        <FontAwesomeIcon icon={faTv} className='text-lg text-gray-400' />
                         <NavLink to='/'>
                                <span className={`${!open && "hidden"} origin-left text-light-white font-semibold text-2xl duration-200`}>
                                    Tv Series
@@ -71,7 +70,7 @@ const SideBar = () => {
                             index === 3 && "bg-bghover w-52"
                         } `}
                     >
-                        <img alt='' className='w-8 h-8 stroke-gray-100' src={`./src/assets/upcoming.png`}/>
+                        <FontAwesomeIcon icon={faCalendar} className='text-lg text-gray-400' />
                         <NavLink to='/'>
                                <span className={`${!open && "hidden"} origin-left text-light-white font-semibold text-2xl duration-200`}>
                                    Upcoming
