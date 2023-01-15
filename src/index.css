@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#checkbox-1:checked~.check-1{
+    @apply text-opacity-100;
+    animation: check-anime 0.5s 1;
+}
+#checkbox-2:checked~.check-1{
+    @apply text-opacity-100;
+    animation: check-anime 0.5s 1;
+}
+#checkbox-3:checked~.check-1{
+    @apply text-opacity-100;
+    animation: check-anime 0.5s 1;
+}
+#checkbox-4:checked~.check-1{
+    @apply text-opacity-100;
+    animation: check-anime 0.5s 1;
+}
+#checkbox-5:checked~.check-1{
+    @apply text-opacity-100;
+    animation: check-anime 0.5s 1;
+}
+#checkbox-6:checked~.check-1{
+    @apply text-opacity-100;
+    animation: check-anime 0.5s 1;
+}
+.badge{
+    @apply bg-gray-500 text-gray-500 text-xs uppercase font-bold rounded p-2 absolute
+}
+
+@keyframes check-anime {
+    0%, 100%{
+        @apply transform scale-100;
+    }
+    50%{
+        @apply transform scale-150 text-opacity-0;
+    }
+}
