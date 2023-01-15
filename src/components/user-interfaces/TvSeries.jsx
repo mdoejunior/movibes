@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from "react";
 import instance from "../../api/instance.js";
 import {NavLink} from "react-router-dom";
+import {faStar} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 const TvSeries=()=>{
     const [data, setData] = useState([])
@@ -27,7 +29,7 @@ const TvSeries=()=>{
                                 <img src={`https://image.tmdb.org/t/p/original/${trends['poster_path']}`} alt='' className='w-full object-fit'/>
                             </NavLink>
                             <div className='flex flex-row items-center absolute gap-2 top-0 right-0 shadow-lg h-10 w-18 rounded-bl-3xl bg-light-white'>
-                                <img className="h-5"  src='../src/assets/star.png' alt='' />
+                                <FontAwesomeIcon icon={faStar} className='text-gold' />
                                 <span className='text-gold'>{trends['vote_average']}</span>
                             </div>
                         </div>
