@@ -8,7 +8,7 @@ const SideBar = () => {
     const [index, setIndex] = useState(0)
     return (
         <div className='fixed top-0 left-2 '>
-            <div className={`dark:bg-light-white rounded-tr-3xl w-56 h-screen p-5 pt-8 duration-300`}>
+            <div className={`dark:bg-light-white rounded-tr-3xl rounded-br-3xl w-56 h-screen p-5 pt-8 duration-300`}>
                 <div className="flex gap-x-4 items-center">
                     <h1
                         className={`text-white origin-left m-1 text-hover-color font-medium text-3xl duration-200 ${
