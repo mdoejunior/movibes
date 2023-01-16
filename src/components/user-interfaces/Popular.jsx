@@ -22,7 +22,7 @@ const Popular=()=>{
                 <h4 className='mt-8 font-bold text-lg  text-light-white'>See all</h4>
             </div>
             <div className='flex'>
-                <div className='grid grid-cols-4 gap-10'>
+                <div className='grid grid-cols-1 md:grid-cols-2 sm:grid-cols-1 lg:grid-cols-4 gap-10'>
                     {data.map((trends, index)=>(
                         <div key={index} className='w-52 ml-auto bg-white rounded-3xl overflow-hidden shadow-lg mt-8 relative'>
                             <NavLink to={`/movies-detail/${trends['id']}`}>

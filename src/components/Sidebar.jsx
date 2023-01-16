@@ -22,7 +22,7 @@ const SideBar = () => {
                     <li
                         className={`flex  rounded-md p-2 cursor-pointer hover:bg-hover-color text-gray-300 text-sm items-center gap-x-4 mt-14
                               ${
-                            index === 0 && "bg-bghover w-52 rounded-1xl "
+                            index === 0 && "bg-bghover rounded-1xl "
                         } `}
                     >
                         <FontAwesomeIcon icon={faHome} className='text-lg text-gray-400' />
@@ -37,7 +37,7 @@ const SideBar = () => {
                         onClick={() => setIndex(1)}
                         className={`flex  rounded-md p-2 cursor-pointer hover:bg-hover-color text-gray-300 text-sm items-center gap-x-4 mt-14
                               ${
-                            index === 1 && "bg-bghover w-52 "
+                            index === 1 && "bg-bghover rounded-1xl "
                         } `}
                     >
                         <FontAwesomeIcon icon={faVideoCamera} className='text-lg text-gray-400' />
@@ -52,7 +52,7 @@ const SideBar = () => {
                         onClick={() => setIndex(2)}
                         className={`flex  rounded-md p-2 cursor-pointer hover:bg-hover-color text-gray-300 text-sm items-center gap-x-4 mt-14
                               ${
-                            index === 2 && "bg-bghover w-52"
+                            index === 2 && "bg-bghover rounded-1xl"
                         } `}
                     >
                         <FontAwesomeIcon icon={faTv} className='text-lg text-gray-400' />
@@ -67,7 +67,7 @@ const SideBar = () => {
                         onClick={() => setIndex(3)}
                         className={`flex  rounded-md p-2 cursor-pointer hover:bg-hover-color text-gray-300 text-sm items-center gap-x-4 mt-14
                               ${
-                            index === 3 && "bg-bghover w-52"
+                            index === 3 && "bg-bghover rounded-1xl"
                         } `}
                     >
                         <FontAwesomeIcon icon={faCalendar} className='text-lg text-gray-400' />

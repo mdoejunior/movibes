@@ -3,7 +3,7 @@ import {FaRegBell, FaSearch, FaUserCircle} from "react-icons/fa";
 
 const TopNavigation=()=>{
     return(
-       <div className='flex flex-row items-center justify-around'>
+       <div className='flex flex-row items-center justify-around mt-5'>
            <div className='w-3/4 mr-20 h-16 flex items-center justify-start bg-dark dark:bg-light-white text-gray-500 rounded-full shadow-md
                  transition duration-300 ease-in-out'>
                <input className='w-full ml-5 font-sans text-2xl font-bold bg-transparent outline-none text-gray-500  placeholder-gray-500
